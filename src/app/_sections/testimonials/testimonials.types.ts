@@ -12,7 +12,7 @@ export const testimonials: TestimonialsTypes[] = [
     "header": "110 people in 10 days – a lifesaver for the company at the start of the summer season",
     "opinion": "The summer season was approaching, and a service company was facing the problem of staff shortages – vacations of permanent employees and the ineffectiveness of other agencies meant that there was no way to serve all clients. Immediate action was needed, but competing agencies were only providing individual candidates. Thanks to Jober24, a complete 110-person team was built in 10 days.",
     "name": "Anna N.",
-    "company": "Roldrob"
+    "company": "Poultry plants"
   },
   {
     "score": 5,
