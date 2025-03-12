@@ -1,0 +1,37 @@
+<section>
+  <div class="container relative" data-aos="fade-up" data-aos-once="true" data-aos-duration="2000">
+
+    @if (isMobile) {
+      <div class="features mb-8">
+        <owl-carousel-o [options]="customOptions">
+          @for (feature of features; let i = $index; track i) {
+            <ng-template carouselSlide>
+              <div class="feature flex-1 flex flex-column justify-content-end {{feature.class}}">
+                <div class="py-3">{{ feature.header }}</div>
+              </div>
+            </ng-template>
+          }
+        </owl-carousel-o>
+      </div>
+    } @else {
+      <div class="flex features mb-8">
+        @for (feature of features; let i = $index; track i) {
+          <div class="feature flex-1 flex flex-column justify-content-end {{feature.class}}">
+            <div class="py-3">{{ feature.header }}</div>
+          </div>
+        }
+      </div>
+    }
+    <div class="grid" data-aos="fade-up" data-aos-once="true" data-aos-duration="1500">
+      <div class="lg:col-7 col-12">
+        <h2 class="pb-3">People are the foundation of success – Your partner in building effective teams</h2>
+        <div class="description">
+          In the e-commerce, automotive, and manufacturing industries, success depends on well-selected teams. Our agency
+          specializes in providing comprehensive recruitment solutions that enable companies to create
+          effective, cohesive, and efficient teams. Thanks to us, hiring the right specialists and integrating new
+          employees is smooth and effective.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
